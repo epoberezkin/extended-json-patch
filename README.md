@@ -110,43 +110,43 @@ Example patch with all text operations:
   {
     "op": "add-text",
     "path": "/a/b/c",
-    "pos": {"line": 1},
+    "loc": {"line": 1},
     "text": "Hello world\n"
   },
   {
     "op": "remove-text",
     "path": "/a/b/c",
-    "pos": {"line": 1, "col": 7},
-    "endPos": {"line": 1, "col": 12}
+    "loc": {"line": 1, "col": 7},
+    "endLoc": {"line": 1, "col": 12}
   },
   {
     "op": "replace-text",
     "path": "/a/b/c",
-    "pos": {"line": 1, "col": 1},
-    "endPos": {"line": 1, "col": 6},
+    "loc": {"line": 1, "col": 1},
+    "endLoc": {"line": 1, "col": 6},
     "text": "eyH"
   },
   {
     "op": "move-text",
     "from": "/a/b/c",
-    "fromPos": {"line": 1, "col": 3},
-    "fromEndPos": {"line": 1, "col": 4},
+    "fromLoc": {"pos": 3},
+    "fromEndLoc": {"pos": 4},
     "path": "/a/b/c",
-    "pos": {"line": 1, "col": 1}
+    "loc": {"pos": 1}
   },
   {
     "op": "copy-text",
     "from": "/a/b/c",
-    "fromPos": {"line": 1, "col": 1},
-    "fromEndPos": {"line": 1, "col": 4},
+    "fromLoc": {"line": 1, "col": 1},
+    "fromEndLoc": {"line": 1, "col": 4},
     "path": "/a/b/c",
-    "pos": {"line": 1, "col": 5}
+    "loc": {"line": 1, "col": 5}
   },
   {
     "op": "test-text",
     "path": "/a/b/c",
-    "pos": {"line": 1},
-    "endPos": {"line": 2},
+    "loc": {"line": 1},
+    "endLoc": {"line": 2},
     "text": "Hey Hey"
   }
 ]
