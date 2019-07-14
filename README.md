@@ -20,9 +20,9 @@ understand what the change was with large multiline strings.
 
 ## Changes
 
-- Type tests. Extended JSON Patch extends ["test" operation](#test) defined in
-RFC6902 to allow testing for a target location type.
-- Member existence test.
+- Type and location existence tests. Extended JSON Patch extends
+["test" operation](#test) defined in RFC6902 to allow testing for a target
+location type.
 - Multi-line text editing. Extended JSON Patch defines `"edit"` operation that
 allows to apply changes to large string value with a minimal size of the patch.
 
